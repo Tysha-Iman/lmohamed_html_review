@@ -46,6 +46,9 @@ nav ul {
 	display: flex;
 	grid-gap: 30px;
 }
+li a {
+	color: #F08080;
+}
 
 footer {
 	display: grid;
@@ -56,4 +59,14 @@ footer {
 
 .credits {
 	text-align: right;
+}
+
+.joke {
+	font-size: 50px;
+	font-weight: bold;
+	cursor: url(../imgs/deadrose.png), auto;
+}
+
+.joke p:not(:first-child){
+	display: none;
 }
