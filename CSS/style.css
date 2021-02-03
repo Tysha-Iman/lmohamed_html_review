@@ -24,12 +24,28 @@ main {
 	align-items: center;
 }
 
+.box {
+	background-color: #FFF5EF;
+	color: #F08080;
+}
+
 header {
 	border-bottom: 1px solid grey;
 	padding: 30px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.sitename {
+	display: flex;
+	grid-gap: 10px;
+}
+
+h1 {
+	margin: 0px;
+	color: #CD5C5C;
+	font-family: 'Great Vibes', cursive;
 }
 
 .logo {
@@ -46,15 +62,35 @@ nav ul {
 	display: flex;
 	grid-gap: 30px;
 }
+
 li a {
+	background-color: #F08080;
+	color: white;
+	border: 2px solid #F08080;
+	padding: 10px 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 10px; 
+	transition-duration: 0.4s;
+	cursor: url(../imgs/deadrose.png), auto;
+	font-weight: bold;
+}
+
+li a:hover {
+	background-color: white;
 	color: #F08080;
+	border: 2px solid #F08080;
+	font-weight: bold;
 }
 
 footer {
+	border-top: 1px solid grey;
 	display: grid;
 	grid-template-columns: 300px 300px;
 	justify-content: center;
 	grid-gap: 50px;
+	padding-top: 5px;
 }
 
 .credits {
@@ -69,4 +105,14 @@ footer {
 
 .joke p:not(:first-child){
 	display: none;
+}
+
+.credits a {
+	color: #F08080;
+	text-decoration: none;
+}
+
+.credits a:hover {
+	color: #F08080;
+	text-decoration: underline;
 }
